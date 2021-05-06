@@ -53,7 +53,7 @@
         <!-- Герой -->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button primary">Заказать услугу</button>
+            <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
         </section>
 
         <!-- Секция особенности студии -->
@@ -112,12 +112,21 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="works-list list">
-                    <li class="item"><img src="./images/studio/works/box_1.jpg" width="370" height="294"
-                            alt="Создание сайта"></li>
-                    <li class="item"><img src="./images/studio/works/box_2.jpg" width="370" height="294"
-                            alt="разработка мобильных приложений"></li>
-                    <li class="item"><img src="./images/studio/works/box_3.jpg" width="370" height="294"
-                            alt="Дизайн приложении"></li>
+                    <li class="item">
+                        <img src="./images/studio/works/box_1.jpg" width="370" height="294"
+                            alt="Создание сайта">                        
+                        <p class="works-descripton">Десктопные приложения</p>                        
+                    </li>
+                    <li class="item">
+                        <img src="./images/studio/works/box_2.jpg" width="370" height="294"
+                            alt="разработка мобильных приложений">
+                        <p class="works-descripton">Мобильные приложения</p>
+                    </li>
+                    <li class="item">
+                        <img src="./images/studio/works/box_3.jpg" width="370" height="294"
+                            alt="Дизайн приложении">
+                        <p class="works-descripton">Дизайнерские решения</p>    
+                    </li>
                 </ul>
             </div>
         </section>
@@ -380,6 +389,18 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-btn" type="button" data-modal-close>
+                <svg class="close-btn-icon" width="18" heigth="18">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
 
 </body>
 
