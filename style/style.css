@@ -676,7 +676,8 @@ img {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: all 500ms linear;
+  transition: all 4250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .modal {
@@ -687,6 +688,7 @@ img {
   width: 528px;
   height: 580px;
   background-color: #ffffff;
+     
 }
 
 .close-btn {
@@ -701,11 +703,13 @@ img {
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transform: scale(0);
+  
 }
